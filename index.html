@@ -1,0 +1,217 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skype Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h3 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #005bb5;
+}
+
+ul.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+ul.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+ul.menu li a:hover {
+    background-color: #004b8a;
+}
+
+ul.submenu {
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #005bb5;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.submenu li {
+    margin: 0;
+}
+
+ul.submenu li a {
+    padding: 10px;
+}
+
+ul.menu li:hover ul.submenu {
+    display: block;
+}
+
+/* Productos */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.products h1 {
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-item h3 {
+    color: #0073e6;
+    font-size: 1.2em;
+}
+
+.product-item p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.price {
+    font-weight: bold;
+    color: #0073e6;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Skype Shop</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a>
+                    <ul class="submenu">
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Monitores</a></li>
+                        <li><a href="#">Teclados</a></li>
+                        <li><a href="#">Ratones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h1>Nuestros Componentes</h1>
+        <h3>Bill Jhon Mita Apaza</h3>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="https://tectec.cl/wp-content/uploads/2023/11/Ryzen-7-7700X_1.jpg" alt="Laptop">
+                <h3>AMD Ryzen™ 7 7700X</h3>
+                <p>El AMD Ryzen™ 7 7700X es un procesador para computadoras de escritorio para gaming líder que está diseñado con ocho núcleos de CPU y 16 subprocesos, y tiene una velocidad de reloj turbo máxima de hasta 5,4 GHz.</p>
+                <span class="price">$900</span>
+            </div>
+            <div class="product-item">
+                <img src="https://nissei.com/media/catalog/product/cache/24e3af3791642c18c52611620aeb2e21/1/1/110559_-_1.jpg" alt="Monitor">
+                <h3>Placa Madre Asus ROG Strix Z790-H</h3>
+                <p>Es una placa base compatible con PCIe 5.0 a la espera de las tarjetas gráficas de próxima generación y la conectividad WiFi 6E y USB 3.2 Gen 2x2 de última generación.</p>
+                <span class="price">$800</span>
+            </div>
+            <div class="product-item">
+                <img src="https://media.pangoly.com/img/4/f/4/0/4f405416-d9b8-4b35-ae7f-9f2fdc47b2e0.jpg" alt="Teclado">
+                <h3>MSI GeForce RTX 4090 GAMING X TRIO CLASSIC 24G</h3>
+                <p>NVIDIA, Procesador gráfico: GeForce RTX 4090. Capacidad memoria de adaptador gráfico: 24 GB, Tipo de memoria de adaptador gráfico: GDDR6X, Ancho de datos: 384 bit. Máxima resolución: 7680 x 4320 Pixeles.</p>
+                <span class="price">$1000</span>
+            </div>
+            <div class="product-item">
+                <img src="https://img.terabyteshop.com.br/produto/g/memoria-ddr5-corsair-dominator-platinum-rgb-64gb-2x32gb-preto-5200mhz-cmt64gx5m2b5200c40_189209.jpg" alt="Memoria RAM">
+                <h3>Memoria Corsair Dominator Platinum RGB DDR5</h3>
+                <p>Memoria Corsair Dominator Platinum RGB DDR5, 64 GB (2 x 32 GB), negro, 5200 MHz</p>
+                <span class="price">$500</span>
+            </div>
+            <div class="product-item">
+                <img src="https://img.terabyteshop.com.br/produto/g/fonte-corsair-rm1200x-shift-white-1200w-80-plus-gold-full-modular-banco-cp-9020276-br_206343.jpg" alt="Fuente de alimentación">
+                <h3>Fuente de alimentación Corsair RM1200x</h3>
+                <p>Fuente de alimentación Corsair RM1200x Shift White, 1200W, 80 Plus Gold, Full Modular</p>
+                <span class="price">$370</span>
+            </div>
+            <div class="product-item">
+                <img src="https://img.terabyteshop.com.br/produto/g/ssd-corsair-mp600-2tb-m2-2280-leitura-4950mbs-e-gravacao-4250mbs-cssd-f2000gbmp600_85831.png" alt="SSD">
+                <h3>Corsair MP600 2TB SSD</h3>
+                <p>Corsair MP600 2TB SSD, M.2 2280, 4.950 MB de lectura y 4.250 MB de escritura, CSSD</p>
+                <span class="price">$500</span>
+            </div>
+        </div>
+    </section>
+<footer style="background-color: #333; color: white; padding: 20px; text-align: center;">
+    <p>Síguenos en redes sociales</p>
+    <div>
+        <a href="https://wa.me/123456789" target="_blank" style="color: white; margin: 0 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" style="width:30px;">
+        </a>
+        <a href="https://www.facebook.com/tu-pagina" target="_blank" style="color: white; margin: 0 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width:30px;">
+        </a>
+        <a href="https://www.instagram.com/tu-pagina" target="_blank" style="color: white; margin: 0 15px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:30px;">
+       </a>
+    </div>
+</footer>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Componentes Skype Shop. Todos los derechos reservados UPDS.</p>
+    </footer>
+</body>
+</html>
